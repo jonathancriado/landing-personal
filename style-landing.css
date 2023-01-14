@@ -1,3 +1,6 @@
+* {
+    margin: 0;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -13,6 +16,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.seccionUno {
+    margin: 6px;
+}
+.fotoNombreDescripcion .foto img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+} 
+.fotoNombreDescripcion .nombre {
+    font-weight: bolder;
+}
+.fotoNombreDescripcion .descripcion {
+    text-align: center;
+    font-style: oblique;
 }
 .contacto {
     display: flex;
