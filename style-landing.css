@@ -1,7 +1,7 @@
 * {
     margin: 0;
-    font-family: 'Yatra One';
-    font-weight: 400;
+    font-family: 'Syne';
+    font-weight: 200;
     background: var(--fondo);
     color: var(--texto);
 }
@@ -16,12 +16,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .fotoNombreDescripcion {
     display: flex;
@@ -46,6 +48,8 @@
 .listaLinks {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .link {
     display: flex;
@@ -53,10 +57,9 @@
     justify-content: center;
     align-items: center;
     margin: 8px;
-    text-align: center;
     padding: 8px 0;
     border-radius: 20px;
-    width: 90vw;
+    width: 90%;
     border: 2px solid var(--bordes);
     background: var(--fondo);
 }
@@ -71,10 +74,35 @@
 .wspEmail {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    opacity: 45%;
 }
 .contacto {
-    padding: 8px;
+    padding: 10px;
     margin: 32px 10px;
+    border: 1px solid var(--texto);
+    border-radius: 50%;
+}
+
+@media (min-width: 1199px) {
+    .card {
+        border-radius: 10px;
+        width: 20%;
+        height: 80%;
+        box-shadow: 0px 0px 25px 0px var(--bordes);
+    }
+}
+
+/**
+.imagenFondo {
+    width: 100px;
+    height: 100px;
+}
+
+.imagenFondo img {
+    content: "";
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
 }
