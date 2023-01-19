@@ -5,7 +5,7 @@
 }
 * {
     margin: 0;
-    font-family: 'Syne';
+    font-family: 'Syne';    
     color: var(--blanco);
     
 }
@@ -36,6 +36,16 @@
 .fotoNombreDescripcion .seccion {
     margin: 8px;
 }
+
+.fotoNombreDescripcion .foto img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+}
+
+.fotoNombreDescripcion .nombre {
+    font-weight: bolder;
+}
 .fotoNombreDescripcion .descripcion {
     text-align: center;
     font-style: oblique;
@@ -45,12 +55,14 @@
     height: 80px;
     border-radius: 50%;
 } 
+
 .listaLinks {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
 .listaLinks .link {
     display: flex;
     flex-direction: row;
@@ -63,11 +75,18 @@
     border: none;
     text-decoration: none;
     background: linear-gradient(0deg, #34194e 0%, #a750f7 100%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(0deg, rgba(52, 25, 78, 1) 0%, rgba(167, 80, 247, 1) 100%, rgba(0, 0, 0, 1) 100%);
 }
 .listaLinks .link i {
     color: var(--text);
     padding: 0 6px;
 }
+
+.listaLinks .link a {
+    text-decoration: none;
+    color: var(--text);
+}
+
 .wspEmail {
     display: flex;
     flex-direction: row;
@@ -78,6 +97,13 @@
     padding: 6px;
     margin: 18px 8px;
     opacity: 75%;
+}
+.wspEmail .contacto {
+    padding: 6px;
+    margin: 14px 8px;
+    border: 2px solid var(--texto);
+    border-radius: 50%;
+    opacity: 45%;
 }
 
 @media (min-width: 767px) {
